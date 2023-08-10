@@ -1,0 +1,338 @@
+/*Select field*/
+.select-field-configurator-dynamic-kit {
+  appearance: none;
+}
+
+.icon-select-field-configurator-dynamic-kit {
+  pointer-events: none;
+}
+
+/*Checkbox dark/ light mode*/
+.checkbox-mode-configurator-dynamic-kit:checked
+  ~ .switch-checkbox-mode-configurator-dynamic-kit {
+  transform: translateX(36px);
+}
+
+.checkbox-mode-configurator-dynamic-kit:checked
+  ~ .icon-dark-checkbox-mode-configurator-dynamic-kit {
+  color: white;
+}
+
+.checkbox-mode-configurator-dynamic-kit:checked
+  ~ .icon-light-checkbox-mode-configurator-dynamic-kit {
+  color: #acb3c2;
+}
+
+/*Radio button - Radius*/
+.radio-button-radius-configurator-dynamic-kit:checked
+  ~ .checked-radio-radius-configurator-dynamic-kit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.radio-button-radius-configurator-dynamic-kit:checked
+  ~ .label-radio-radius-configurator-dynamic-kit {
+  color: #4779ff;
+  background-color: #f2f6ff;
+}
+
+.radio-button-radius-configurator-dynamic-kit:checked:hover
+  ~ .hover-radio-radius-configurator-dynamic-kit {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.radio-button-radius-configurator-dynamic-kit:hover
+  ~ .hover-radio-radius-configurator-dynamic-kit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*Checkbox email first*/
+.checkbox-email-first-configurator-dynamic-kit:checked
+  ~ .toggle-checkbox-email-first-configurator-dynamic-kit {
+  transform: translateX(20px);
+}
+
+.checkbox-email-first-configurator-dynamic-kit:checked
+  ~ .background-toggle-checkbox-email-first-configurator-dynamic-kit {
+  background-color: #4779ff;
+}
+
+/*Checkbox chains*/
+.checkbox-chains-configurator-dynamic-kit:checked
+  ~ .checked-checkbox-chains-configurator-dynamic-kit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.checkbox-chains-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.checkbox-chains-configurator-dynamic-kit:hover
+  ~ .hover-checkbox-chains-configurator-dynamic-kit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.checkbox-chains-configurator-dynamic-kit:checked:hover
+  ~ .hover-checkbox-chains-configurator-dynamic-kit {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/*Radio button - Colors*/
+.radio-button-radio-color-configurator-dynamic-kit:checked
+  ~ .checked-radio-color-configurator-dynamic-kit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.radio-button-radio-color-configurator-dynamic-kit:checked:hover
+  ~ .hover-radio-color-configurator-dynamic-kit {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.radio-button-radio-color-configurator-dynamic-kit:hover
+  ~ .hover-radio-color-configurator-dynamic-kit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+:root {
+  --accentColor1: #4779ff;
+
+  --background1: #f6f7f9;
+  --background2: #fdfdfd;
+  --background3: #eef0f4;
+  --background4: #ffffff;
+  --background5: var(--accentColor1);
+  --backgroundHover1: #fdfdfd;
+  --shadowHover1: 0px 12px 20px -6px rgba(24, 39, 75, 0.02),
+    0px 16px 26px -4px rgba(24, 39, 75, 0.04);
+  --transitionHover1: all 0.35s ease;
+  --backgroundHover2: #eef0f4;
+
+  --textColor1: #252731;
+  --textColor2: #676f86;
+  --textColor3: var(--textColor2);
+
+  --strokeColor1: #eff0f3;
+  --strokeColor2: 1px solid transparent;
+  --strokeColor3: 1px solid transparent;
+  --strokeColor4: 1px solid transparent;
+
+  --fontFamily1: Radomir tinkov gilroy;
+
+  --radius1: 24px;
+  --radius2: 12px;
+
+  --padding1: 24px 24px 24px 24px;
+  --padding2: 12px;
+
+  --boxShadow1: 0px 1px 2px rgba(24, 39, 75, 0.04);
+
+  --heightListHybrid: 168px;
+}
+
+[background-color="1"] {
+  background: var(--background1);
+}
+
+[background-color="2"] {
+  background: var(--background2);
+}
+
+[background-color="3"] {
+  background: var(--background3);
+}
+
+[background-color="4"] {
+  background: var(--background4);
+}
+
+[background-color="5"] {
+  background: var(--background5);
+}
+
+[accent-color="1"] {
+  background-color: var(--accentColor1);
+}
+
+[border-radius="1"] {
+  border-radius: var(--radius1);
+}
+
+[border-radius="2"] {
+  border-radius: var(--radius2);
+}
+
+[stroke="1"],
+[stroke="1"]:focus {
+  border-color: var(--strokeColor1);
+}
+
+[stroke="2"] {
+  border: var(--strokeColor2);
+}
+
+[stroke="3"] {
+  border: var(--strokeColor3);
+}
+
+[stroke="4"] {
+  border: var(--strokeColor4);
+}
+
+[text-color="1"] {
+  color: var(--textColor1);
+}
+
+[text-color="2"],
+[text-color="2"]::placeholder {
+  color: var(--textColor2);
+}
+
+[text-color="3"] {
+  color: var(--textColor3);
+}
+
+[text-color="4"] {
+  color: var(--accentColor1);
+}
+
+[padding="1"] {
+  padding: var(--padding1);
+}
+[padding="2"] {
+  padding: var(--padding2);
+}
+
+[font-family="1"] {
+  font-family: var(--fontFamily1);
+}
+
+[box-shadow="1"] {
+  box-shadow: var(--boxShadow1);
+}
+
+[list-hybrid-height="1"] {
+  height: var(--heightListHybrid);
+}
+
+[icon-social-dynamic-kit="dark"] {
+  display: none;
+}
+
+[transition-hover="1"] {
+  transition: var(--transitionHover1);
+}
+
+[background-hover="1"]:hover {
+  background-color: var(--backgroundHover1);
+}
+
+[shadow-hover="1"]:hover {
+  box-shadow: var(--shadowHover1);
+}
+[customer-type="Hybrid"] {
+  display: block;
+}
+
+.collection-list-wrapper-wallets-list-card-preview-dynamic-kit::-webkit-scrollbar {
+  display: none;
+}
+
+.card-preview-dynamic-kit {
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.search-wallets-content-card-preview-dynamic-kit:focus,
+.search-wallets-content-card-preview-dynamic-kit:hover {
+  background: var(--backgroundHover1);
+}
+
+.input-card-web2-preview-dynamic-kit:focus,
+.input-card-web2-preview-dynamic-kit:hover {
+  background: var(--backgroundHover1);
+}
+
+.modal-sign-in-card-preview-dynamic-kit {
+  transition-delay: 350ms;
+}
+@media (min-width: 992px) {
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="3bf30e60-6d34-c1bd-4b78-7bba4c6f6322"] {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0) skew(0, 0);
+    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0) skew(0, 0);
+    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0) skew(0, 0);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0) skew(0, 0);
+  }
+}
+
+@media (min-width: 992px) {
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="3bf30e60-6d34-c1bd-4b78-7bba4c6f6322"] {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0) skew(0, 0);
+    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0) skew(0, 0);
+    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0) skew(0, 0);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0) skew(0, 0);
+  }
+}
+.wrapp-video-popup-product-video {
+  aspect-ratio: 16 / 9;
+}
+
+#video-popup-player-product {
+  margin-bottom: -8px;
+}
+
+.wrapp-video-popup-walkthrough{
+	aspect-ratio: 16 / 9;
+}
+
+#video-popup-player-walkthrough{
+	 margin-bottom:-8px;
+}
+.video-hero-home{
+	aspect-ratio: 340/343;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.bloc-install-code::-webkit-scrollbar {
+  display: none;
+}
+
+.text-code-content{
+	overflow-wrap: break-word;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.bloc-install-code {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.code-line-indicator{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently */
+}
